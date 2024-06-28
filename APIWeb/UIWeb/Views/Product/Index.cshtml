@@ -1,0 +1,76 @@
+﻿@model IEnumerable<UIWeb.Models.DTO.ProductDto>
+@{
+    ViewBag.Title = "Quản lý mặt hàng";
+}
+<form id="formSearch" action="" method="get" data-container="#searchResult">
+<div class="col-sm-12 input-group">
+        <input name="filterQuery" type="text" class="form-control" value=""
+           placeholder="Nhập tên mặt hàng cần tìm">
+    <div class="input-group-btn">
+        <button class="btn btn-info" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+        </button>
+    
+        <a href="Product/Create" class="btn btn-primary" style="margin-left:5px">
+            <i class="fa fa-plus"></i> Bổ Sung
+        </a>
+    </div>
+</div>
+</form>
+<p style="margin:10px 0 10px 0">
+    
+</p>
+<div class="table-responsive">
+    <table class="table table-bordered table-hover table-striped">
+        <thead>
+            <tr class="bg-primary">
+                <th>Ảnh</th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn vị tính</th>
+                <th>Gía</th>
+                <th style="width:80px"></th>
+            </tr>
+        </thead>
+        <tbody>
+           
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td style="text-align: center;">
+                        <img src="@product.Photo" : item.Photo)" style="width:100px" alt="" />
+                    </td>
+                    <td>@product.ProductName</td>
+                    <td>@product.Unit</td>
+                    <td>@product.Price</td>
+                    <td class="text-right">
+                        <a href="Product/Edit/@product.Id" class="btn btn-xs btn-info">
+                            <i class="fa fa-edit"></i>
+                        </a>
+                        <a href="Product/Delete/@product.Id" class="btn btn-xs btn-danger">
+                            <i class="fa fa-remove"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+ 
+        </tbody>
+    </table>
+
+</div>
+<div class="text-center">
+    <ul class="pagination">
+        @for (int i = 1; i <= ViewBag.PageCount; i++)
+        {
+
+            if (i == ViewBag.CurrentPage)
+            {
+                <li class="active"><a href="#">@i</a></li>
+            }
+            else
+            {
+                <li><a href="Product?pageNumber=@i" onclick="">@i</a></li>
+            }
+        }
+    </ul>
+</div>
+

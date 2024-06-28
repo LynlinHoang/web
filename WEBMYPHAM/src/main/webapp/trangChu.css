@@ -1,0 +1,167 @@
+@charset "UTF-8";
+.card {
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.img {
+  border: 0;
+  width: 225px;
+}
+h5{
+	  color: red;
+}
+.maloai{
+	display: flex;
+	
+}
+.card{
+	  margin-right: 30px;
+	  border-radius: 6px;
+}
+.form{
+	 margin-left: 85px;
+}
+.maloai1{
+	align:center;
+	
+}
+.imgtc{
+	width:300px;
+}
+ul,li{
+	list-style: none;
+	
+}
+
+.main-nav{
+	
+	  
+	  width: 270px;
+	  border: 5px;
+}
+.main-nav h3{
+	background: #e9ade5;
+	padding: 15px;
+	color: white;
+	text-transform:uppercase; 
+	font-size: 17px;
+	
+}
+.main-nav a{
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	font-weight:500;
+	display: block;
+	padding: 8px 0 8px 20px;
+	color:black;
+    font-family: math;
+		 
+}
+.main-nav li{
+	border-bottom: 1px solid #c6c2c2;
+}
+
+.block-main-silder{	
+	margin-top: 20px;
+	
+}
+.main-nav-ul{
+	margin-left: -36px;
+}
+.container-fluid{
+	background-color:#f3e0f4;
+}
+.navbar navbar-inverse {
+	border-color:#f3e0f4;
+	background-color:#f3e0f4;
+}
+.navbar{
+	 border-radius: 0px;
+}
+
+.navbar-header a{
+	font-family: cursive;
+}
+.navbar-body li{
+	color:black;
+}
+h2{
+	background: #e9ade5;
+	padding: 5px;
+	color: white;
+	text-transform:uppercase; 
+	font-size: 17px;
+}
+
+.buttom{
+		
+		display: flex;
+		flex-direction: row-reverse;
+}
+.buttom_1{
+	padding: 10px;
+	font-size: 1em;
+}
+
+.center{
+			width: 430px;
+			margin: 130px auto;
+			position: relative;
+		}
+.center .header{
+			font-size: 28px;
+			font-weight: bold;
+			color: white;
+			padding: 25px 0 30px 25px;
+			background: #e9ade5;			
+			border-radius: 5px 5px 0 0;
+		}
+.center form{
+			position: absolute;
+			background: white;
+			width: 100%;
+			padding: 50px 10px 0 30px;
+			box-sizing: border-box;		
+			border-radius: 0 0 5px 5px;
+		}
+.form_dn input{
+			height: 50px;
+			width: 90%;
+			padding: 0 10px;
+			border-radius: 3px;
+			border: 1px solid silver;
+			font-size: 14px;
+			outline: none;
+			margin-top: 15px;
+			font-family: Arial; 
+		}
+		.form_dn input[type="password"]{
+			margin-top: 20px;
+		}
+		.form_dn i{
+			position: absolute;
+			font-size: 25px;
+			color: grey;
+			margin: 15px 0 0 -45px;
+		}
+		i.fa-lock{
+			margin-top: 35px;
+		}
+		.form_dn input[type="submit"]{
+			margin-top: 40px;
+			margin-bottom: 40px;
+			width: 130px;
+			height: 45px;
+			color: white;
+			cursor: pointer;
+			line-height: 45px;			
+			border-radius: 5px;
+			background: #e9ade5;
+		}
+
+		.form_dn a{
+			text-decoration: none;
+			font-size: 18px;
+			color: #7f2092;
+			padding: 0 0 0 20px;
+		}

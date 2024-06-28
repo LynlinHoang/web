@@ -1,0 +1,13 @@
+.sidebar-container {
+    height: 95vh;
+    background-color: #ffc0cb;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-container {
+    margin-top: 15px;
+    height: 85vh;
+    background-color: white;
+    margin: auto;
+}

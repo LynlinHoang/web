@@ -1,0 +1,14 @@
+body {
+    background-color: #eaeaea !important;
+
+}
+
+.ui.fixed.menu {
+    background: linear-gradient(to right, rgb(147 185 204), rgb(83 162 196));
+    height: 45px;
+}
+
+.ui.inverted.menu .item {
+    margin-left: 30px;
+
+}
